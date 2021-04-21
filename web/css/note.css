@@ -1,0 +1,397 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:verdana;
+}
+.container
+{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/*          menu bar         */
+.menu
+{
+  background-color:#0A122A;
+  height:80px;
+  margin:0px;
+  padding:0px;
+  border:50px;
+}
+.menu ul
+{
+  display: inline-flex;
+  margin: 35px;
+  color:white;
+}
+.menu ul li
+{
+  list-style: none;
+  margin: 0 20px;
+  color: #b2b1b1;
+  cursor: pointer;
+}
+
+a:link
+{
+  text-decoration: none;
+}
+a:visited
+{
+  text-decoration: none;
+  color:inherit;
+
+}
+a:hover
+{
+  text-decoration: none;
+}
+.logo img
+{
+    width:30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+.active{
+  color: #19dafa !important;
+}
+.signup-btn
+{
+    top:25px;
+    right:80px;
+    position: absolute;
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signup-btn span
+{
+    display: block;
+    padding: 8px 22px;
+}
+/*          menu bar         */
+
+
+
+/*      side menu       */
+#contactCategory{
+  padding-left: 30px;
+    padding-bottom: 5px;
+}
+#contactCategory:hover{
+  background-color: rgba(50,50,50,0.3);
+}
+
+#contactCategory a:{
+
+}
+
+.addnewcat{
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.addnewcat:hover{
+  background-color: rgba(50,50,50,0.3);
+  cursor: pointer;
+}
+/*      side menu       */
+/*   ALSO   side menu       */
+.display-menu
+{
+    display: block;
+}
+.hidden-menu
+{
+    display: none;
+}
+.show-menu
+{
+    display: block;
+}
+.hide-menu
+{
+    display: none;
+}
+.rotate-arrow-down
+{
+    transform: rotate(-90deg);
+}
+.rotate-arrow-hide
+{
+    transform: rotate(90deg);
+}
+/*   ALSO   side menu       */
+
+
+/* Form */
+/* Full-width input fields */
+h1
+{
+  border-bottom: 5px;
+  padding: 20px;
+  font-size: 2.5em;
+  font-weight: 200px;
+  letter-spacing: 8px;
+  text-align: center;
+  animation: text 3s 1;
+}
+input[type=text], input[type=number], textarea {
+    width: 75%;
+    padding: 5px;
+    border: none;
+    display: inline-block;
+    outline: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 17px;
+}
+textarea
+{
+  width: 95%;
+  padding: 15px;
+  border: none;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #ddd;
+}
+
+input[type=date]
+{
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #transparent;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+.form-label
+{
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+/* Set a style for all buttons */
+.button {
+  display: flex;
+  width: 850px;
+  height: 50px;
+  padding: 3px 3px;
+  color: white;
+  margin:10px auto auto auto;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  cursor: pointer;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.reset-btn {
+    padding: 14px 20px;
+    background-color: transparent;
+    float: left;
+    width: 40%;
+    font-weight: 2px;
+    border-radius: 20px;
+    border: 1.5px solid #0A122A;
+    color: #0A122A;
+    outline: 0;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.confirm-btn {
+  float: right;
+  width: 40%;
+  background-color: #0A122A;
+  padding: 14px 20px;
+  color: white;
+  font-weight: 2px;
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+  outline: 0;
+}
+
+/* Add padding to container elements */
+.form-container {
+    padding: 16px;
+    border-radius: 100px;
+    border: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+    border-radius: 20px;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for reset button and confirm button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+       border-radius: 20px;
+    }
+}
+
+/* Confirm form */
+.confirm-form
+{
+  width: 600px;
+  margin: auto;
+  padding-top: 12vh;
+}
+.confirm-header
+{
+  background-color: rgba(0, 0, 0);
+  color: white;
+  padding: 20px 25px;
+  font-family: 'Oswald', sans-serif, 400;
+  font-weight: bold;
+  font-size: 18px;
+}
+.confirm-text{
+  background-color: white;
+  padding: 35px 25px;
+  font-family: 'Oswald', sans-serif, 400;
+  font-size: 15px;
+}
+.confirm-form-but
+{
+  background-color: #DCDCDC;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.confirm-form-but button
+{
+  margin-left: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+}
+.confirm-form-but button[type='submit']
+{
+  padding: 8px 15px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.confirm-form-but button[type='button']
+{
+  padding: 8px 15px;
+  border: 2px solid black;
+}
+
+.confirm-form-but button[type='submit']:hover
+{
+  cursor: pointer;
+  background: rgb(193, 193, 215);
+  border: 2px solid black;
+  color: black;
+}
+.confirm-form-but button[type='submit']:focus
+{
+  background: grey;
+  border: 2px solid black;
+  background-color: rgba(193, 193, 215,0.5);
+}
+.confirm-form-but button[type='button']:hover
+{
+  cursor: pointer;
+  background-color: rgb(193, 193, 215);
+}
+.confirm-form-but button[type='button']:focus
+{
+  background-color: rgba(193, 193, 215,0.5);
+}
+
+
+/* footer section*/
+.footer
+{
+
+  width:100%;
+  line-height: 10px;
+  margin-top:10px;
+  text-align:center;
+  padding:10px 0;
+  background: #0A122A;
+}
+.footer ul
+{
+  display: inline-flex;
+  margin: 25px auto;
+  text-align: center;
+  color: #EEEEEE;
+}
+.footer ul li
+{
+  list-style: none;
+  margin: 0 50px;
+  font-size: 15px;
+}

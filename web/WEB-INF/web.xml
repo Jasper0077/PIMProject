@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogOutServlet</servlet-name>
+        <servlet-class>LogOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOutServlet</servlet-name>
+        <url-pattern>/LogOutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUpServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfileModifyServlet</servlet-name>
+        <servlet-class>ProfileModifyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileModifyServlet</servlet-name>
+        <url-pattern>/ProfileModifyServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddOtherInfoServlet</servlet-name>
+        <servlet-class>AddOtherInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddOtherInfoServlet</servlet-name>
+        <url-pattern>/AddOtherInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteOtherInfoServlet</servlet-name>
+        <servlet-class>DeleteOtherInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteOtherInfoServlet</servlet-name>
+        <url-pattern>/DeleteOtherInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadProfileImageServlet</servlet-name>
+        <servlet-class>UploadProfileImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadProfileImageServlet</servlet-name>
+        <url-pattern>/UploadProfileImageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddEventServlet</servlet-name>
+        <servlet-class>AddEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEventServlet</servlet-name>
+        <url-pattern>/AddEventServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditEventNCServlet</servlet-name>
+        <servlet-class>EditEventNCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditEventNCServlet</servlet-name>
+        <url-pattern>/EditEventNCServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <servlet-class>DeleteEventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteEventServlet</servlet-name>
+        <url-pattern>/DeleteEventServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditEventDropServlet</servlet-name>
+        <servlet-class>EditEventDropServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditEventDropServlet</servlet-name>
+        <url-pattern>/EditEventDropServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddCalendarServlet</servlet-name>
+        <servlet-class>AddCalendarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCalendarServlet</servlet-name>
+        <url-pattern>/AddCalendarServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditCalendarNameServlet</servlet-name>
+        <servlet-class>EditCalendarNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditCalendarNameServlet</servlet-name>
+        <url-pattern>/EditCalendarNameServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCalendarServlet</servlet-name>
+        <servlet-class>DeleteCalendarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCalendarServlet</servlet-name>
+        <url-pattern>/DeleteCalendarServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddContactCatServlet</servlet-name>
+        <servlet-class>AddContactCatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddContactCatServlet</servlet-name>
+        <url-pattern>/AddContactCatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditContactCatServlet</servlet-name>
+        <servlet-class>EditContactCatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditContactCatServlet</servlet-name>
+        <url-pattern>/EditContactCatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteContactCatServlet</servlet-name>
+        <servlet-class>DeleteContactCatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteContactCatServlet</servlet-name>
+        <url-pattern>/DeleteContactCatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddContactServlet</servlet-name>
+        <servlet-class>AddContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddContactServlet</servlet-name>
+        <url-pattern>/AddContactServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditContactServlet</servlet-name>
+        <servlet-class>EditContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditContactServlet</servlet-name>
+        <url-pattern>/EditContactServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteContactServlet</servlet-name>
+        <servlet-class>DeleteContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteContactServlet</servlet-name>
+        <url-pattern>/DeleteContactServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddNoteCatServlet</servlet-name>
+        <servlet-class>AddNoteCatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNoteCatServlet</servlet-name>
+        <url-pattern>/AddNoteCatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditNoteCatServlet</servlet-name>
+        <servlet-class>EditNoteCatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditNoteCatServlet</servlet-name>
+        <url-pattern>/EditNoteCatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteNoteCatServlet</servlet-name>
+        <servlet-class>DeleteNoteCatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteNoteCatServlet</servlet-name>
+        <url-pattern>/DeleteNoteCatServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddNoteServlet</servlet-name>
+        <servlet-class>AddNoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNoteServlet</servlet-name>
+        <url-pattern>/AddNoteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditNoteServlet</servlet-name>
+        <servlet-class>EditNoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditNoteServlet</servlet-name>
+        <url-pattern>/EditNoteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteNoteServlet</servlet-name>
+        <servlet-class>DeleteNoteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteNoteServlet</servlet-name>
+        <url-pattern>/DeleteNoteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddCollectionServlet</servlet-name>
+        <servlet-class>AddCollectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCollectionServlet</servlet-name>
+        <url-pattern>/AddCollectionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditCollectionServlet</servlet-name>
+        <servlet-class>EditCollectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditCollectionServlet</servlet-name>
+        <url-pattern>/EditCollectionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCollectionServlet</servlet-name>
+        <servlet-class>DeleteCollectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCollectionServlet</servlet-name>
+        <url-pattern>/DeleteCollectionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadFileServlet</servlet-name>
+        <servlet-class>UploadFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadFileServlet</servlet-name>
+        <url-pattern>/UploadFileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownloadFileServlet</servlet-name>
+        <servlet-class>DownloadFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadFileServlet</servlet-name>
+        <url-pattern>/DownloadFileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteFileServlet</servlet-name>
+        <servlet-class>DeleteFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFileServlet</servlet-name>
+        <url-pattern>/DeleteFileServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

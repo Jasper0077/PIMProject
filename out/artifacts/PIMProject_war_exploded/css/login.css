@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:verdana;
+}
+
+.background-container{
+  background: linear-gradient(to right, #757f9a, #d7dde8);
+  opacity: 1;
+  min-height: 100vh;
+
+}
+
+.loginform-container{
+  width: 30%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0,0,0,1);
+}
+
+.login-title{
+  color: white;
+  font-size: 40px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  padding-left: 43px;
+}
+
+.login-form{
+  padding: 10px 45px;
+}
+
+.input-box
+{
+  position: relative;
+  padding: 20px 0;
+}
+
+.input-box input
+{
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: none;
+}
+
+.input-box label{
+  position: absolute;
+  top: 20;
+  left: 0;
+  color: white;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus,
+.input-box input:valid
+{
+  border-bottom: 1px solid #00d4ff;
+}
+
+.input-box input:focus ~label,
+.input-box input:valid ~label
+{
+  top: -5;
+  color: #00d4ff;
+}
+
+.login-button{
+  padding-top: 19px;
+  padding-bottom: 35px;
+  width: 100%;
+}
+
+.login-button button{
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #00d4ff;
+  padding: 7px 0;
+  font-size: 18px;
+}
+
+.login-button button:hover
+{
+  color: #00d4ff;
+  cursor: pointer;
+}
+
+.login-button button:active
+{
+  background-color: rgba(0,212,255,0.6);
+}

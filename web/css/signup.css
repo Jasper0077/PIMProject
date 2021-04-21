@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:verdana;
+  }
+
+  /*Notes*/
+
+  .note h3, h1
+  {
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: 200px;
+    letter-spacing: 8px;
+    text-align: center;
+    background: transparent;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+/* Form */
+/* Full-width input fields */
+input[type=text], input[type=number], input[type=date], textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 5px 0 22px 0;
+    background: transparent;
+    display: inline-block;
+    border-bottom: 2px solid #ddd;
+    font-size: 17px;
+}
+
+input[type=password]
+{
+  width: 35%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 20px;
+  background: transparent;
+  color: black;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+
+.form-label
+{
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+/* Set a style for all buttons */
+.button {
+  display: flex;
+  width: 850px;
+  height: 50px;
+  padding: 3px 3px;
+  color: white;
+  margin:10px auto auto auto;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  cursor: pointer;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.reset-btn {
+    padding: 14px 20px;
+    background-color: transparent;
+    float: left;
+    width: 40%;
+    font-weight: 2px;
+    border-radius: 20px;
+    border: 1.5px solid #0A122A;
+    color: #0A122A;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.confirm-btn {
+  float: right;
+  width: 40%;
+  background-color: #0A122A;
+  padding: 14px 20px;
+  color: white;
+  border-radius: 20px;
+  border: 1.5px solid transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* Add padding to container elements */
+.form-container {
+    padding: 16px;
+    border-radius: 100px;
+    border: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #0A122A;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for reset button and confirm button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+       border-radius: 20px;
+    }
+}
